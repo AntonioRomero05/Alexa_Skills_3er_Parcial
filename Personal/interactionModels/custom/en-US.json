@@ -1,0 +1,325 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "anios",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.284797897379.1219993096627"
+              }
+            },
+            {
+              "name": "peso",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.284797897379.206112269517"
+              }
+            },
+            {
+              "name": "nombre",
+              "elicitationRequired": true,
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.39266500498.790335505632"
+              }
+            }
+          ],
+          "name": "porcionesIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me",
+            "help "
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "marca",
+              "type": "marcacroqueta"
+            },
+            {
+              "name": "gato",
+              "type": "gatosxd"
+            }
+          ],
+          "name": "marcasIntent",
+          "samples": [
+            "{marca} brand {gato} croquettes"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "compraIntent",
+          "samples": [
+            "Tips for purchasing",
+            "Buying recommendations"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "usoIntent",
+          "samples": [
+            "Recommendation for use",
+            "Usage recommendation"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "anios",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{anios}",
+                "{anios} years",
+                "he is {anios} years old",
+                "she is {anios} years old"
+              ]
+            },
+            {
+              "name": "peso",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{peso}",
+                "My cat weighs {peso} kilograms",
+                "{peso} kilograms"
+              ]
+            },
+            {
+              "name": "nombre",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "His name is {nombre}",
+                "Her name is {nombre}",
+                "{nombre}"
+              ]
+            }
+          ],
+          "name": "porcionesIntent",
+          "samples": [
+            "My cat\u0027s name is {nombre}",
+            "How much food should I give my cat",
+            "how much food should I give my cat if they are {anios}  years old and weigh {peso} kilograms"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "pro plan kitten",
+                  "pro plan gatito"
+                ],
+                "value": "purina pro plan kitten"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "whiskas gatito"
+                ],
+                "value": "whiskas gatitos"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "felix gatito"
+                ],
+                "value": "purina felix gatitos"
+              }
+            },
+            {
+              "name": {
+                "value": "whiskas"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "felix"
+                ],
+                "value": "purina felix"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "purina gatina"
+                ],
+                "value": "gatina"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "cat chow"
+                ],
+                "value": "purina cat chow"
+              }
+            },
+            {
+              "name": {
+                "value": "nucat"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "plus"
+                ],
+                "value": "minino plus"
+              }
+            },
+            {
+              "name": {
+                "value": "kitekat"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pro plan adulto",
+                  "pro plan adult",
+                  "pro plan "
+                ],
+                "value": "purina pro plan adult"
+              }
+            },
+            {
+              "name": {
+                "value": "grancat"
+              }
+            }
+          ],
+          "name": "marcacroqueta"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cats"
+              }
+            },
+            {
+              "name": {
+                "value": "cat"
+              }
+            }
+          ],
+          "name": "gatosxd"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "yoyo"
+              }
+            },
+            {
+              "name": {
+                "value": "negro"
+              }
+            },
+            {
+              "name": {
+                "value": "pancho"
+              }
+            },
+            {
+              "name": {
+                "value": "pan"
+              }
+            },
+            {
+              "name": {
+                "value": "juan"
+              }
+            }
+          ],
+          "name": "names"
+        }
+      ],
+      "invocationName": "cats food"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "tell me the age in years"
+          },
+          {
+            "type": "PlainText",
+            "value": "tell me the age of your cat in years"
+          }
+        ],
+        "id": "Elicit.Slot.284797897379.1219993096627"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "tell me the weight of your cat in kilograms"
+          },
+          {
+            "type": "PlainText",
+            "value": "How much does your cat weigh in kilograms?"
+          }
+        ],
+        "id": "Elicit.Slot.284797897379.206112269517"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is your cat\u0027s name?"
+          }
+        ],
+        "id": "Elicit.Slot.39266500498.790335505632"
+      }
+    ]
+  }
+}

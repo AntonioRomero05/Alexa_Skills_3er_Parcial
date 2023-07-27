@@ -1,0 +1,365 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "anios",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.284797897379.1219993096627"
+              }
+            },
+            {
+              "name": "peso",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.284797897379.206112269517"
+              }
+            },
+            {
+              "name": "nombre",
+              "elicitationRequired": true,
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.768593466937.683208815583"
+              }
+            }
+          ],
+          "name": "porcionesIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayudame",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detente"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "marca",
+              "type": "marcacroqueta"
+            },
+            {
+              "name": "gato",
+              "type": "gatosxd"
+            }
+          ],
+          "name": "marcasIntent",
+          "samples": [
+            "info sobre la marca {marca}",
+            "info de la marca {marca} de alimento para {gato}",
+            "info de {marca}",
+            "croquetas {marca}",
+            "croquetas de {marca}",
+            "como son las croquetas de {marca}",
+            "que sabes de la marca {marca}",
+            "dame información sobre {marca}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "compraIntent",
+          "samples": [
+            "como comprar",
+            "recomiendame ",
+            "recomendar",
+            "recomendaciones para comprar",
+            "compra",
+            "recomendaciones de compra"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "usoIntent",
+          "samples": [
+            "servir",
+            "como servir",
+            "recomendaciones para usar",
+            "como preparar",
+            "como se usar",
+            "usar",
+            "uso",
+            "sugerencia de uso",
+            "como usar"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "anios",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "tiene {anios} años",
+                "{anios} años"
+              ]
+            },
+            {
+              "name": "peso",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{peso} kilos",
+                "mi gato pesas {peso} kilos"
+              ]
+            },
+            {
+              "name": "nombre",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "mi gato se llama {nombre}",
+                "{nombre}",
+                "su nombre es {nombre}",
+                "se llama {nombre}"
+              ]
+            }
+          ],
+          "name": "porcionesIntent",
+          "samples": [
+            "cuanto le puedo dar de comer a mi gato",
+            "mi gato se llama {nombre}",
+            "cuanto de alimento le doy a mi gato si su edad es de {anios} y pesa {peso} kilos",
+            "porciones de alimento para mi gato",
+            "porciones correctas de alimento para mi gato",
+            "cuanto alimento le doy a mi gato",
+            "que tanto le debo de dar de comer a mi gato"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "misporciones",
+          "samples": [
+            "las porciones de mi gato",
+            "mis porciones"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "pro plan kitten",
+                  "pro plan gatito"
+                ],
+                "value": "purina pro plan kitten"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "whiskas gatito"
+                ],
+                "value": "whiskas gatitos"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "felix gatito"
+                ],
+                "value": "purina felix gatitos"
+              }
+            },
+            {
+              "name": {
+                "value": "whiskas"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "felix"
+                ],
+                "value": "purina felix"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "purina gatina"
+                ],
+                "value": "gatina"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "cat chow"
+                ],
+                "value": "purina cat chow"
+              }
+            },
+            {
+              "name": {
+                "value": "nucat"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "plus"
+                ],
+                "value": "minino plus"
+              }
+            },
+            {
+              "name": {
+                "value": "kitekat"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pro plan adulto",
+                  "pro plan adult",
+                  "pro plan "
+                ],
+                "value": "purina pro plan adult"
+              }
+            },
+            {
+              "name": {
+                "value": "grancat"
+              }
+            }
+          ],
+          "name": "marcacroqueta"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "gato"
+              }
+            },
+            {
+              "name": {
+                "value": "gatos"
+              }
+            }
+          ],
+          "name": "gatosxd"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "negro"
+              }
+            },
+            {
+              "name": {
+                "value": "yoyo"
+              }
+            },
+            {
+              "name": {
+                "value": "luna"
+              }
+            },
+            {
+              "name": {
+                "value": "cafe"
+              }
+            },
+            {
+              "name": {
+                "value": "pan"
+              }
+            },
+            {
+              "name": {
+                "value": "juan"
+              }
+            }
+          ],
+          "name": "names"
+        }
+      ],
+      "invocationName": "croquetas para gatos"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "dime la edad de tu gato en años"
+          },
+          {
+            "type": "PlainText",
+            "value": "dime la edad en años"
+          }
+        ],
+        "id": "Elicit.Slot.284797897379.1219993096627"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "cuanto pesa tu gato en kilos"
+          },
+          {
+            "type": "PlainText",
+            "value": "dime el peso de tu gato en kilos"
+          }
+        ],
+        "id": "Elicit.Slot.284797897379.206112269517"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "podrias decirme el nombre de tu gato"
+          },
+          {
+            "type": "PlainText",
+            "value": "y como se llama tu gato?"
+          }
+        ],
+        "id": "Elicit.Slot.768593466937.683208815583"
+      }
+    ]
+  }
+}
